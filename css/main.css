@@ -24,6 +24,7 @@ body {
 }
 
 ul {
+  display: flex;
   list-style: none;
 }
 
@@ -115,6 +116,7 @@ header {
   margin-right: auto;
   width: 1000px;
   background-color: lightblue;
+  outline: 2px solid khaki;
 }
 
 /*main contant*/
@@ -129,7 +131,7 @@ header {
 .main-idea {
   margin-top: 0;
   padding-top: 200px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   color: var(--white);
   font-weight: 900;
   font-size: 44px;
@@ -159,6 +161,8 @@ header {
 
 .advantages {
   background-color: yellow;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .advantages-list {
@@ -170,6 +174,7 @@ header {
   font-size: 14px;
   line-height: 1.2;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .description-item {
@@ -177,12 +182,15 @@ header {
   font-size: 14px;
   line-height: 1.71;
   margin: 0;
+  padding: 0;
 }
 
 /*our works and team*/
 
 .simple-work {
   background-color: violet;
+  padding-top: 0;
+  padding-bottom: 94px;
 }
 
 .works,
@@ -192,6 +200,12 @@ header {
   line-height: 1.17;
   text-align: center;
   margin: 0;
+  padding-top: 0;
+  margin-bottom: 50px;
+}
+
+.team {
+  padding-top: 94px;
 }
 
 .team-item {
@@ -227,6 +241,11 @@ header {
   background-color: var(--second-background-color);
 }
 
+.logo {
+  padding-top: 60px;
+  padding-left: 215px;
+}
+
 .logo-second-fotter {
   color: var(--white);
 }
@@ -237,6 +256,9 @@ header {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  padding-left: 215px;
 }
 
 .auth-footer .footer-item:hover,
