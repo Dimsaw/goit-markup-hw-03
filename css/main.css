@@ -24,7 +24,7 @@ body {
 }
 
 ul {
-  display: flex;
+  /*display: flex;*/
   list-style: none;
 }
 
@@ -272,6 +272,10 @@ header {
 
 /* страница 2 */
 
+.section-portfolio {
+  background-color: lawngreen;
+}
+
 .portfolio-button {
   display: inline;
 }
@@ -305,15 +309,21 @@ header {
   background-color: var(--accent-color);
 }
 
+.product-item {
+  margin: 0;
+}
+
 .opportunity {
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  margin: 0;
 }
 
 .product {
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.87;
+  margin: 0;
 }
