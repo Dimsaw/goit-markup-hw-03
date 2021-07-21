@@ -17,41 +17,47 @@
   <body>
     <!--верхная линия-->
     <header>
-      <nav class="menu">
-        <a href="./index.html" class="logo-first">
-          Web<span class="logo-second">Studio</span>
-        </a>
-        <ul class="site-nav">
+      <div>
+        <nav class="menu">
+          <a href="./index.html" class="logo-first">
+            Web<span class="logo-second">Studio</span>
+          </a>
+          <ul class="site-nav">
+            <li>
+              <a href="./index.html" class="menu-item"> Студия </a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="menu-item current">
+                Портфолио
+              </a>
+            </li>
+            <li>
+              <a href="#footer" class="menu-item"> Контакты </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="auth-nav list">
           <li>
-            <a href="./index.html" class="menu-item"> Студия </a>
+            <a href="mailto:info@devstudio.com" class="auth-item">
+              info@devstudio.com
+            </a>
           </li>
           <li>
-            <a href="./portfolio.html" class="menu-item current"> Портфолио </a>
-          </li>
-          <li>
-            <a href="#footer" class="menu-item"> Контакты </a>
+            <a href="tel:+380961111111" class="auth-item">
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
-      </nav>
-      <ul class="auth-nav list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="auth-item">
-            info@devstudio.com
-          </a>
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="auth-item"> +38 096 111 11 11 </a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <!--основная информация страницы 2-->
     <main>
       <!--портфолио-->
       <section>
-        <ul>
+        <ul class="portfolio-button">
           <li><button class="button-main">Все</button></li>
-          <li><button class="button">Веб-сайты</button></li>
+          <li><button class="button line">Веб-сайты</button></li>
           <li><button class="button">Приложения</button></li>
           <li><button class="button">Дизайн</button></li>
           <li><button class="button">Маркетинг</button></li>

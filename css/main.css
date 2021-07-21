@@ -40,6 +40,10 @@ header {
   background-color: var(--white);
 }
 
+.page-header {
+  background-color: var(--white);
+}
+
 .menu-item:hover,
 .menu-item:focus {
   color: var(--accent-color);
@@ -91,11 +95,26 @@ header {
 
 .auth-item {
   color: var(--title-text-color);
-  text-decoration: none;
+  display: inline;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+}
+
+.list {
+  margin: 0;
+}
+
+.page-header {
+  background-color: var(--white);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  background-color: lightblue;
 }
 
 /*main contant*/
@@ -108,6 +127,9 @@ header {
 }
 
 .main-idea {
+  margin-top: 0;
+  padding-top: 200px;
+  margin-bottom: 30px;
   color: var(--white);
   font-weight: 900;
   font-size: 44px;
@@ -126,25 +148,42 @@ header {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  text-align: center;
+  margin-bottom: 200px;
 }
 
 /* section advantages*/
+
+.advantages {
+  background-color: yellow;
+}
+
+.advantages-list {
+  margin: 0;
+}
 
 .advantages-item {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
+  margin: 0;
 }
 
 .description-item {
   color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.71;
+  margin: 0;
 }
 
 /*our works and team*/
+
+.simple-work {
+  background-color: violet;
+}
 
 .works,
 .team {
@@ -152,22 +191,33 @@ header {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin: 0;
+}
+
+.team-item {
+  margin: 0;
+}
+
+.simple-foto {
+  margin: 0;
 }
 
 .section-team {
-  background-color: var(--additional-background-color);
+  background-color: palegreen;
 }
 
 .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  margin: 0;
 }
 
 .team-position {
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.19;
+  margin: 0;
 }
 
 /*contact inform*/
@@ -200,14 +250,31 @@ header {
 
 /* страница 2 */
 
+.portfolio-button {
+  display: inline;
+}
+
 .button-main {
   color: var(--white);
   background-color: var(--accent-color);
+  border: 1px solid transparent;
+  margin: 6px;
+  padding: 6px 22px;
+  border-radius: 4px;
+  text-align: center;
 }
 
 .button {
   color: var(--primary-text-color);
   background-color: #f5f4fa;
+  border: 1px solid transparent;
+  margin: 6px;
+  padding: 6px 22px;
+  border-radius: 4px;
+  text-align: center;
+}
+.line {
+  border: 1px solid #000000;
 }
 
 .button:hover,
