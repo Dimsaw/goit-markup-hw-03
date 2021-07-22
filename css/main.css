@@ -24,12 +24,23 @@ body {
 }
 
 ul {
-  /*display: flex;*/
   list-style: none;
+  padding-inline-start: 0;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 cursor: pointer;
@@ -45,22 +56,14 @@ header {
   background-color: var(--white);
 }
 
-.menu-item:hover,
-.menu-item:focus {
-  color: var(--accent-color);
-}
-
-.menu-item {
-  color: var(--primary-text-color);
-}
-
-.current {
-  color: var(--accent-color);
-}
-
-.auth-nav .auth-item:hover,
-.auth-nav .auth-item:focus {
-  color: var(--accent-color);
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  background-color: lightblue;
+  outline: 2px solid khaki;
 }
 
 .logo-first {
@@ -83,15 +86,41 @@ header {
   line-height: 1.19;
 }
 
-.advantages {
-  list-style: none;
+.site-nav {
+  display: flex;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+  color: var(--accent-color);
 }
 
 .menu-item {
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   text-decoration: none;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+.auth-nav {
+  display: flex;
+}
+
+.auth-nav .auth-item:hover,
+.auth-nav .auth-item:focus {
+  color: var(--accent-color);
 }
 
 .auth-item {
@@ -109,14 +138,6 @@ header {
 
 .page-header {
   background-color: var(--white);
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1000px;
-  background-color: lightblue;
-  outline: 2px solid khaki;
 }
 
 /*main contant*/
@@ -163,10 +184,17 @@ header {
   background-color: yellow;
   padding-top: 94px;
   padding-bottom: 94px;
+  list-style: none;
 }
 
 .advantages-list {
   margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card-content {
+  padding-left: 30px;
 }
 
 .advantages-item {
@@ -174,7 +202,8 @@ header {
   font-size: 14px;
   line-height: 1.2;
   margin: 0;
-  margin-bottom: 10px;
+  padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .description-item {
@@ -214,6 +243,7 @@ header {
 
 .simple-foto {
   margin: 0;
+  display: flex;
 }
 
 .section-team {
@@ -242,8 +272,6 @@ header {
 }
 
 .logo {
-  padding-top: 60px;
-  padding-left: 215px;
 }
 
 .logo-second-fotter {
