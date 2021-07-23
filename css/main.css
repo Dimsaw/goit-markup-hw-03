@@ -62,8 +62,18 @@ header {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  background-color: lightblue;
+  background-color: var(--white);
   outline: 2px solid khaki;
+}
+
+.mane-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
 }
 
 .logo-first {
@@ -88,6 +98,7 @@ header {
 
 .site-nav {
   display: flex;
+  margin-left: 93px;
 }
 
 .menu-item:hover,
@@ -116,6 +127,11 @@ header {
 
 .auth-nav {
   display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .auth-nav .auth-item:hover,
@@ -130,14 +146,12 @@ header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.list {
-  margin: 0;
-}
-
-.page-header {
-  background-color: var(--white);
+.info {
+  margin-left: auto;
 }
 
 /*main contant*/
@@ -145,10 +159,13 @@ header {
 /*section order*/
 
 .order {
-  background-color: var(--primary-text-color);
+  background-color: var(--second-background-color);
   text-align: center;
 }
 
+.order > .container {
+  background-color: var(--second-background-color);
+}
 .main-idea {
   margin-top: 0;
   padding-top: 200px;
@@ -181,9 +198,7 @@ header {
 /* section advantages*/
 
 .advantages {
-  background-color: yellow;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  background-color: var(--white));
   list-style: none;
 }
 
@@ -191,10 +206,11 @@ header {
   margin: 0;
   display: flex;
   justify-content: center;
+  padding-top: 94px;
 }
 
-.card-content {
-  padding-left: 30px;
+.advantages-list .card:not(:last-child) {
+  margin-right: 30px;
 }
 
 .advantages-item {
@@ -202,8 +218,7 @@ header {
   font-size: 14px;
   line-height: 1.2;
   margin: 0;
-  padding-bottom: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 .description-item {
@@ -219,7 +234,6 @@ header {
 .simple-work {
   background-color: violet;
   padding-top: 0;
-  padding-bottom: 94px;
 }
 
 .works,
@@ -231,6 +245,7 @@ header {
   margin: 0;
   padding-top: 0;
   margin-bottom: 50px;
+  padding-top: 94px;
 }
 
 .team {
@@ -246,8 +261,21 @@ header {
   display: flex;
 }
 
+.card-item {
+  width: call((100%-60px)/3);
+  margin-right: 30px;
+}
+
+/* .card-item:not(:last-child) {
+  margin-right: 30px;
+} */
+
 .section-team {
   background-color: palegreen;
+}
+
+.card-team {
+  display: flex;
 }
 
 .team-name {
@@ -271,6 +299,15 @@ header {
   background-color: var(--second-background-color);
 }
 
+.footer-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+
+
 .logo {
 }
 
@@ -284,9 +321,6 @@ header {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  padding-top: 20px;
-  padding-bottom: 60px;
-  padding-left: 215px;
 }
 
 .auth-footer .footer-item:hover,
@@ -308,6 +342,11 @@ header {
   display: inline;
 }
 
+.btn-portfolio {
+  display: flex;
+  justify-content: center;
+}
+
 .button-main {
   color: var(--white);
   background-color: var(--accent-color);
@@ -326,6 +365,8 @@ header {
   padding: 6px 22px;
   border-radius: 4px;
   text-align: center;
+
+  display: flex;
 }
 .line {
   border: 1px solid #000000;
@@ -339,6 +380,13 @@ header {
 
 .product-item {
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
 }
 
 .opportunity {

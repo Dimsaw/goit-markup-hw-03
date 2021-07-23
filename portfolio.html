@@ -17,37 +17,39 @@
   <body>
     <!--верхная линия-->
     <header class="page-header">
-      <div class="container">
+      <div class="container mane-nav">
         <nav class="menu">
           <a href="./index.html#index" class="logo-first">
             Web<span class="logo-second">Studio</span>
           </a>
           <ul class="site-nav">
-            <li>
+            <li class="item">
               <a href="./index.html" class="menu-item"> Студия </a>
             </li>
-            <li>
+            <li class="item">
               <a href="./portfolio.html" class="menu-item current">
                 Портфолио
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="#footer" class="menu-item"> Контакты </a>
             </li>
           </ul>
         </nav>
-        <ul class="auth-nav list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="auth-item">
-              info@devstudio.com
-            </a>
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="auth-item">
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        <div class="info">
+          <ul class="auth-nav list">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="auth-item">
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111" class="auth-item">
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -57,123 +59,179 @@
       <section class="section-portfolio">
         <div class="container">
           <ul class="portfolio-button">
-            <li><button class="button-main">Все</button></li>
-            <li><button class="button line">Веб-сайты</button></li>
-            <li><button class="button">Приложения</button></li>
-            <li><button class="button">Дизайн</button></li>
-            <li><button class="button">Маркетинг</button></li>
+            <div class="btn-portfolio">
+              <li><button class="button-main">Все</button></li>
+              <li><button class="button">Веб-сайты</button></li>
+              <li><button class="button">Приложения</button></li>
+              <li><button class="button">Дизайн</button></li>
+              <li><button class="button">Маркетинг</button></li>
+            </div>
           </ul>
 
           <ul class="product-item">
             <li>
-              <a href="#">
-                <img
-                  src="./images2/img1.jpg"
-                  alt="ноутбук с фото на экране"
-                  width="370"
-                  height="294"
-                />
-                <div>
+              <article class="page">
+                <div class="page-thumb">
+                  <a href="#">
+                    <img
+                      src="./images2/img1.jpg"
+                      alt="ноутбук с фото на экране"
+                      width="370"
+                      height="294"
+                    />
+                  </a>
+                </div>
+
+                <div class="page-content">
                   <h2 class="opportunity">Технокряк</h2>
                   <p class="product">Веб-сайт</p>
                 </div>
-              </a>
+              </article>
             </li>
             <li>
-              <a href="#">
-                <img
-                  src="./images2/img2.jpg"
-                  alt="два баскетболиста"
-                  width="370"
-                  height="294"
-                />
-                <h2 class="opportunity">Постер New Orlean vs Golden Star</h2>
-                <p class="product">Дизайн</p>
-              </a>
+              <article class="page">
+                <div class="page-thumb">
+                  <a href="#">
+                    <img
+                      src="./images2/img2.jpg"
+                      alt="два баскетболиста"
+                      width="370"
+                      height="294"
+                    />
+                  </a>
+                </div>
+
+                <div class="page-content">
+                  <h2 class="opportunity">Постер New Orlean vs Golden Star</h2>
+                  <p class="product">Дизайн</p>
+                </div>
+              </article>
             </li>
             <li>
-              <a href="#">
-                <img
-                  src="./images2/img3.jpg"
-                  alt="рыба"
-                  width="370"
-                  height="294"
-                />
-                <h2 class="opportunity">Ресторан Seafood</h2>
-                <p class="product">Приложение</p>
-              </a>
+              <article class="page">
+                <div class="page-thumb">
+                  <a href="#">
+                    <img
+                      src="./images2/img3.jpg"
+                      alt="рыба"
+                      width="370"
+                      height="294"
+                    />
+                  </a>
+                </div>
+                <div class="page-content">
+                  <h2 class="opportunity">Ресторан Seafood</h2>
+                  <p class="product">Приложение</p>
+                </div>
+              </article>
             </li>
             <li>
-              <a href="">
-                <img
-                  src="./images2/img4.jpg"
-                  alt="наушники"
-                  width="370"
-                  height="294"
-                />
-                <h2 class="opportunity">Проект Prime</h2>
-                <p class="product">Маркетинг</p>
-              </a>
+              <article class="page">
+                <div class="page-thumb">
+                  <a href="">
+                    <img
+                      src="./images2/img4.jpg"
+                      alt="наушники"
+                      width="370"
+                      height="294"
+                    />
+                  </a>
+                </div>
+                <div class="page-content">
+                  <h2 class="opportunity">Проект Prime</h2>
+                  <p class="product">Маркетинг</p>
+                </div>
+              </article>
             </li>
             <li>
-              <a href="">
-                <img
-                  src="./images2/img5.jpg"
-                  alt="две коробки"
-                  width="370"
-                  height="294"
-                />
-                <h2 class="opportunity">Проект Boxes</h2>
-                <p class="product">Приложение</p>
-              </a>
+              <article class="page">
+                <div class="page-thumb">
+                  <a href="#">
+                    <img
+                      src="./images2/img5.jpg"
+                      alt="две коробки"
+                      width="370"
+                      height="294"
+                    />
+                  </a>
+                </div>
+                <div class="page-content">
+                  <h2 class="opportunity">Проект Boxes</h2>
+                  <p class="product">Приложение</p>
+                </div>
+              </article>
             </li>
             <li>
-              <a href="">
-                <img
-                  src="./images2/img6.jpg"
-                  alt="монитор"
-                  width="370"
-                  height="294"
-                />
-                <h2 class="opportunity">Inspiration has no Borders</h2>
-                <p class="product">Веб-сайт</p>
-              </a>
+              <article class="page">
+                <div class="page-thumb">
+                  <a href="#">
+                    <img
+                      src="./images2/img6.jpg"
+                      alt="монитор"
+                      width="370"
+                      height="294"
+                    />
+                  </a>
+                </div>
+                <div class="page-content">
+                  <h2 class="opportunity">Inspiration has no Borders</h2>
+                  <p class="product">Веб-сайт</p>
+                </div>
+              </article>
             </li>
             <li>
-              <a href="">
-                <img
-                  src="./images2/img7.jpg"
-                  alt="разворот журнала"
-                  width="370"
-                  height="294"
-                />
-                <h2 class="opportunity">Издание Limited Edition</h2>
-                <p class="product">Дизайн</p>
-              </a>
+              <article class="page">
+                <div class="page-thumb">
+                  <a href="#">
+                    <img
+                      src="./images2/img7.jpg"
+                      alt="разворот журнала"
+                      width="370"
+                      height="294"
+                    />
+                  </a>
+                </div>
+                <div class="page-content">
+                  <h2 class="opportunity">Издание Limited Edition</h2>
+                  <p class="product">Дизайн</p>
+                </div>
+              </article>
             </li>
             <li>
-              <a href="">
-                <img
-                  src="./images2/img8.jpg"
-                  alt="бирка для одежды"
-                  width="370"
-                  height="294"
-                />
-                <h2 class="opportunity">Проект LAB</h2>
-                <p class="product">Маркетинг</p>
-              </a>
+              <article class="page">
+                <div class="page-thumb">
+                  <a href="#">
+                    <img
+                      src="./images2/img8.jpg"
+                      alt="бирка для одежды"
+                      width="370"
+                      height="294"
+                    />
+                  </a>
+                </div>
+                <div class="page-content">
+                  <h2 class="opportunity">Проект LAB</h2>
+                  <p class="product">Маркетинг</p>
+                </div>
+              </article>
             </li>
             <li>
-              <a href="">
-                <img
-                  src="./images2/img9.jpg"
-                  alt="человек работает на нутбуке"
-                  width="370"
-                  height="294"
-                />
-                <h2 class="opportunity">Growing Business</h2>
-                <p class="product">Приложение</p>
-              </a>
+              <article class="page">
+                <div class="page-thumb">
+                  <a href="#">
+                    <img
+                      src="./images2/img9.jpg"
+                      alt="человек работает на нутбуке"
+                      width="370"
+                      height="294"
+                    />
+                  </a>
+                </div>
+                <div class="page-content">
+                  <h2 class="opportunity">Growing Business</h2>
+                  <p class="product">Приложение</p>
+                </div>
+              </article>
             </li>
           </ul>
         </div>
@@ -182,7 +240,7 @@
 
     <!--контактная информация-->
     <footer class="footer" id="footer">
-      <div class="container">
+      <div class="footer-container">
         <div class="logo">
           <a href="./index.html" class="logo-first">
             Web<span class="logo-second-fotter">Studio</span>
