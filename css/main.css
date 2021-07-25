@@ -452,6 +452,11 @@ rgba(0, 0, 0, 0.2; */
   margin-right: 0; 
 }
 
+.page-content {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
 .opportunity {
   color: var(--primary-text-color);
   font-weight: 700;
