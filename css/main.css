@@ -351,6 +351,7 @@ background-color: var(--white);
 }
 
 .footer-container {
+  background-color: var(--second-background-color);
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
