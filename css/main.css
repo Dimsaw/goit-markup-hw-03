@@ -41,10 +41,12 @@ ul {
 
 a {
   text-decoration: none;
+  
 }
 
 .list {
   list-style: none;
+  
 }
 
 img {
@@ -61,21 +63,15 @@ cursor: auto;
 
 header {
   background-color: var(--white);
-  
 }
 
 .page-header {
   background-color: var(--white);
-  
-  
-  
 }
 
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 0 15px;
   width: 1200px;
   background-color: var(--white);
 }
@@ -127,12 +123,7 @@ header {
   line-height: 1.1;
   text-decoration: none;
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
+  padding: 32px 0;
 }
 
 .current {
@@ -142,9 +133,10 @@ header {
 .auth-nav {
   display: flex;
   margin-left: auto;
+
 }
 
-.auth-nav .item:not(:last-child) {
+.item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -160,14 +152,11 @@ header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 0;
 }
 
 .info {
   margin-left: auto;
-
-
 }
 
 /*main contant*/
@@ -177,16 +166,15 @@ header {
 .order {
   background-color: var(--second-background-color);
   text-align: center;
+  padding: 200px 0;
 }
 
 .order > .container {
   background-color: var(--second-background-color);
 }
 .main-idea {
-  margin-top: 0;
   max-width: 696px;
-  padding-top: 200px;
-  margin: 0 auto 40px;
+  margin: 0 auto 30px;
   color: var(--white);
   font-weight: 900;
   font-size: 44px;
@@ -203,15 +191,14 @@ header {
 .order-btn {
   color: var(--white);
   background-color: var(--accent-color);
-  font-style: 700;
-  font-weight: bold;
+  font-style: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   padding: 10px 32px;
   box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   text-align: center;
-  margin-bottom: 200px;
 }
 
 /* section advantages*/
@@ -219,14 +206,17 @@ header {
 .advantages {
   background-color: var(--white));
   list-style: none;
+  padding-top: 94px;
 }
 
 .advantages-list {
   margin: 0;
   display: flex;
-  justify-content: center;
-  padding-top: 94px;
 }
+
+  .card {
+  width: 270px;
+  }
 
 
 .advantages-list .card:not(:last-child) {
@@ -238,7 +228,7 @@ header {
   font-size: 14px;
   line-height: 1.2;
   margin: 0;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .description-item {
@@ -252,7 +242,7 @@ header {
 /*our works and team*/
 
 .simple-work {
-  padding-top: 0;
+  padding-top: 94px;
 }
 
 
@@ -265,18 +255,18 @@ header {
   margin: 0;
   padding-top: 0;
   margin-bottom: 50px;
-  padding-top: 94px;
+  
 }
 
 .team-item {
   margin: 0;
 }
 
+
 .simple-foto {
   margin: 0;
   display: flex;
   align-content: center;
-  padding-bottom: 94px;
 }
 
 
@@ -295,8 +285,9 @@ header {
 
 .section-team {
   background-color: var(--additional-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-
 .section-team >.container{
   background-color: var(--additional-background-color);
 }
@@ -308,7 +299,6 @@ header {
 
 .card-team {
   margin-right: 30px;
-  margin-bottom: 94px;
   width: 270px;
   height: 368px;
   border: 1px solid rgba(0, 0, 0, 0.25);
@@ -322,7 +312,7 @@ header {
 }
 
 .team-info {
-padding: 30px 59px 30px 60px;
+padding: 30px 20px;
 background-color: var(--white);
 }
 
@@ -348,6 +338,8 @@ background-color: var(--white);
 .footer {
   font-family: "Roboto", sans-serif;
   background-color: var(--second-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-container {
@@ -361,7 +353,7 @@ background-color: var(--white);
 
 
 .logo {
-  padding-top: 60px;
+  display: inline-block;
   margin-bottom: 20px;
 }
 
@@ -375,7 +367,6 @@ background-color: var(--white);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  padding-bottom: 60px;
 }
 
 .auth-footer .footer-item:hover,
@@ -387,7 +378,16 @@ background-color: var(--white);
   color: rgba(255, 255, 255, 0.6);
 }
 
+.title-contact {
+  margin-top: 9px;
+}
+
 /* страница 2 */
+
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .page-header  {
   border-bottom: 1px solid #ECECEC;
@@ -397,7 +397,6 @@ background-color: var(--white);
   display: inline;
   display: flex;
   justify-content: center;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -405,7 +404,6 @@ background-color: var(--white);
   color: var(--white);
   background-color: var(--accent-color);
   border: 1px solid transparent;
-  /* margin: 6px; */
   padding: 6px 22px;
   border-radius: 4px;
   text-align: center;
@@ -434,27 +432,22 @@ background-color: var(--white);
 
 .product-item {
   display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 94px;  
+  flex-wrap: wrap;  
   margin-right: -30px;
+  margin-bottom: -30px;
  }
 
 .page {
-  
   margin-right: 30px;
   margin-bottom: 30px;
+  width: 370px;
+  height: 404px;
 }
 
 .mane-page {
   display: block;
-  width: calc((100%-90)/3);
-
-}
-
-
-.mane-page:nth-child(3n) {
-  margin-right: 0; 
-}
+  width: calc ((100% - 90px) / 3);
+} 
 
 .page-content {
  
