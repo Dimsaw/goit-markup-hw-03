@@ -243,6 +243,7 @@ header {
 
 .simple-work {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 
@@ -300,7 +301,6 @@ header {
 .card-team {
   margin-right: 30px;
   width: 270px;
-  height: 368px;
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px ;
@@ -336,7 +336,6 @@ background-color: var(--white);
 /*contact inform*/
 
 .footer {
-  font-family: "Roboto", sans-serif;
   background-color: var(--second-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -351,15 +350,10 @@ background-color: var(--white);
   width: 1200px;
 }
 
-
-.logo {
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
 .logo-second-fotter {
-  color: var(--white);
+  color: var(--white)
 }
+
 .contact {
   color: var(--white);
   font-family: "Roboto", sans-serif;
@@ -367,6 +361,7 @@ background-color: var(--white);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  margin-top: 20px;
 }
 
 .auth-footer .footer-item:hover,
@@ -374,13 +369,18 @@ background-color: var(--white);
   color: var(--accent-color);
 }
 
+.auth-footer {
+  margin-top: 9px;
+}
+
 .footer-item {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.title-contact {
+.title-contact:nth-child(n + 2) {
   margin-top: 9px;
 }
+
 
 /* страница 2 */
 
@@ -400,6 +400,10 @@ background-color: var(--white);
   margin-bottom: 50px;
 }
 
+.search-button:not(:last-child) {
+  margin-right: 8px;
+}
+
 .button-main {
   color: var(--white);
   background-color: var(--accent-color);
@@ -413,7 +417,6 @@ background-color: var(--white);
   color: var(--primary-text-color);
   background-color: #f5f4fa;
   border: 1px solid transparent;
-  margin-left: 8px;
   padding: 6px 22px;
   border-radius: 4px;
   text-align: center;
@@ -441,7 +444,6 @@ background-color: var(--white);
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;
-  height: 404px;
 }
 
 .mane-page {
