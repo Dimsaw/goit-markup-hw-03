@@ -441,11 +441,6 @@ background-color: var(--white);
   margin-bottom: -30px;
  }
 
-.page {
-  margin-right: 30px;
-  margin-bottom: 30px;
-  width: 370px;
-}
 
 .mane-page {
   display: block;
