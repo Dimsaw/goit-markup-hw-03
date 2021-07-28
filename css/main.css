@@ -74,6 +74,7 @@ header {
   padding: 0 15px;
   width: 1200px;
   background-color: var(--white);
+ 
 }
 
 .mane-nav {
@@ -171,6 +172,7 @@ header {
 
 .order > .container {
   background-color: var(--second-background-color);
+   
 }
 .main-idea {
   max-width: 696px;
@@ -301,9 +303,8 @@ header {
 .card-team {
   margin-right: 30px;
   width: 270px;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px ;
+  border-radius: 0px 0px 4px 4px; ;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -449,6 +450,9 @@ background-color: var(--white);
 .mane-page {
   display: block;
   width: calc ((100% - 90px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 370px;
 } 
 
 .page-content {
